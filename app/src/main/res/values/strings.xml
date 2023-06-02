@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Kot2Raihanefelmaulana</string>
+    <string name="title">Transaksi Mini Market</string>
+    <string name="nama">Nama Barang</string>
+    <string name="jumlah">Jumlah Barang</string>
+    <string name="harga">Harga Barang</string>
+    <string name="promo">Promo</string>
+    <string name="payung">Payung</string>
+    <string name="Setrika">Setrika</string>
+    <string name="minikompo">Mini Kompo</string>
+    <string name="tv">TV1</string>
+    <string name="motor">Sepeda Motor</string>
+    <string name="tv1">TV17</string>
+    <string name="carabayar">Cara Bayar</string>
+    <string name="cash">Cash</string>
+    <string name="debit">Debit/Cash</string>
+    <string name="submit">Submit</string>
+    <string name="output">Output</string>
+</resources>

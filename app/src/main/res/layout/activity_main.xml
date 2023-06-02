@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Transaksi Mini Market"
+        android:id="@+id/txttitle"
+        android:textColor="@color/purple_700"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tbl1"
+        android:layout_below="@id/txttitle"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="10dp">
+
+        <TableRow>
+        <TextView
+            android:id="@+id/txtnama"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/nama" />
+
+            <EditText
+                android:id="@+id/editnama"
+                android:hint="Imput nama barang"
+                android:textSize="15sp"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/txtjumlah"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/jumlah" />
+
+            <EditText
+                android:id="@+id/editjumlah"
+                android:hint="Imput jumlah barang"
+                android:textSize="15sp"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/txtharga"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/harga" />
+
+            <EditText
+                android:id="@+id/editharga"
+                android:hint="Imput jumlah barang"
+                android:textSize="15sp"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"/>
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/txtpromo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tbl1"
+        android:hint="Promo"
+        android:textColor="@color/purple_700"></TextView>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tbl2"
+        android:layout_below="@+id/tbl1">
+
+        <TableRow>
+            <CheckBox
+                android:id="@+id/chkpayung"
+                android:text="@string/payung"
+                android:textSize="15sp"
+                android:textStyle="bold">
+            </CheckBox>
+            <CheckBox
+                android:id="@+id/chksetrika"
+                android:text="@string/Setrika"
+                android:textSize="15sp"
+                android:textStyle="bold">
+            </CheckBox>
+            <CheckBox
+                android:id="@+id/chkkompo"
+                android:text="@string/minikompo"
+                android:textSize="15sp"
+                android:textStyle="bold">
+            </CheckBox>
+        </TableRow>
+        <TableRow>
+            <CheckBox
+                android:id="@+id/chktv"
+                android:text="@string/tv"
+                android:textSize="15sp"
+                android:textStyle="bold">
+            </CheckBox>
+            <CheckBox
+                android:id="@+id/chkmotor"
+                android:text="@string/motor"
+                android:textSize="15sp"
+                android:textStyle="bold">
+            </CheckBox>
+            <CheckBox
+                android:id="@+id/chktv1"
+                android:text="@string/tv1"
+                android:textSize="15sp"
+                android:textStyle="bold">
+            </CheckBox>
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/txtbayar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tbl2"
+        android:text="cara bayar"
+        android:textColor="@color/teal_700"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        ></TextView>
+    <RadioGroup
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rg1"
+        android:layout_below="@id/tbl2"
+        android:orientation="horizontal"
+        >
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cash"
+            android:id="@+id/rbcash">
+
+        </RadioButton>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/debit"
+            android:id="@+id/rbdebit">
+        </RadioButton>
+    </RadioGroup>
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/submit"
+        android:textSize="15sp"
+        android:id="@+id/btnsubmit"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_below="@+id/rg1"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/output"
+        android:layout_marginTop="10dp"
+        android:id="@+id/txtoutput"
+        android:layout_below="@+id/btnsubmit"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:textColor="@color/white">
+    </TextView>
+</RelativeLayout>
+</ScrollView>
